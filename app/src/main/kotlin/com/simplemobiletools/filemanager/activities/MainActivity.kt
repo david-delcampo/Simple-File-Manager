@@ -27,8 +27,10 @@ import com.simplemobiletools.filemanager.extensions.config
 import com.simplemobiletools.filemanager.fragments.ItemsFragment
 import com.simplemobiletools.filemanager.helpers.RootHelpers
 import com.stericson.RootTools.RootTools
+import jcifs.smb.SmbException
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
+import jcifs.smb.SmbFile
 
 class MainActivity : SimpleActivity(), ItemsFragment.ItemInteractionListener, Breadcrumbs.BreadcrumbsListener {
     private val STORAGE_PERMISSION = 1

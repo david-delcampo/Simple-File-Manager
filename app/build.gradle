@@ -42,6 +42,7 @@ dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
     compile files('../libs/RootTools.jar')
+    compile files('../libs/jcifs-1.3.18.jar')
 }
 
 buildscript {

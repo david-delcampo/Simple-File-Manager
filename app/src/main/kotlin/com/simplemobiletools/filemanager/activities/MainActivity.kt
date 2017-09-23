@@ -149,6 +149,17 @@ class MainActivity : SimpleActivity(), ItemsFragment.ItemInteractionListener, Br
 
     // TODO Será necesario gestionar los permisos
     private fun goSmb() {
+        toast("aqui llega")
+        try {
+            var domains : Array<SmbFile>? = null
+            Thread({
+                domains = (SmbFile("smb://192.168.1.33/WDTVLiveHub/")).listFiles()
+                domains?.map { toast(it.name) }
+            }).start()
+        }
+        catch (e: Exception) {
+            toast(e.message.toString())
+        }
     }
     //
 

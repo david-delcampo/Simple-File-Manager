@@ -46,4 +46,8 @@
         android:id="@+id/about"
         android:title="@string/about"
         app:showAsAction="never"/>
+    <item
+        android:id="@+id/smb"
+        android:title="wdtvlivehub"
+        app:showAsAction="never"/>
 </menu>

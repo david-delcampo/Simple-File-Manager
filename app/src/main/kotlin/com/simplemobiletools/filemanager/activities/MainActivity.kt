@@ -139,10 +139,16 @@ class MainActivity : SimpleActivity(), ItemsFragment.ItemInteractionListener, Br
             R.id.stop_showing_hidden -> tryToggleTemporarilyShowHidden()
             R.id.settings -> startActivity(Intent(this, SettingsActivity::class.java))
             R.id.about -> launchAbout()
+            R.id.smb -> goSmb()
             else -> return super.onOptionsItemSelected(item)
         }
         return true
     }
+
+    // TODO Será necesario gestionar los permisos
+    private fun goSmb() {
+    }
+    //
 
     private fun goHome() {
         if (config.homeFolder != currentPath)
